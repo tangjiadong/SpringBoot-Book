@@ -1,1 +1,12 @@
-
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 30
+  tomcat:
+    uri-encoding: UTF-8
+age: 18
+name: tangjiadong
+personinfo:
+  name: tangjiadong
+  age: 3
