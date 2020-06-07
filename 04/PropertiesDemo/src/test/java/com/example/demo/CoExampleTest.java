@@ -26,4 +26,9 @@ public class CoExampleTest {
     public void getAddress(){
         System.out.println(coExample.getAddress());
     }
+
+    @Test
+    public void test(){
+
+    }
 }
