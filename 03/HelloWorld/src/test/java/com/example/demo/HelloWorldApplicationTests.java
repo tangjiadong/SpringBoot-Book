@@ -8,6 +8,7 @@ class HelloWorldApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("tang");
 	}
 
 }
