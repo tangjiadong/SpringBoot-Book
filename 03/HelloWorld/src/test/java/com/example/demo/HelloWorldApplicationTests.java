@@ -9,6 +9,7 @@ class HelloWorldApplicationTests {
 	@Test
 	void contextLoads() {
 		System.out.println("tang");
+		System.out.println("jia");
 	}
 
 }
