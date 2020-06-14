@@ -12,6 +12,7 @@ public class HelloWorldApplication {
 //		sApp.setBannerMode(Banner.Mode.OFF);
 //		sApp.run(args);
 		//1312312
+		//445556
 		SpringApplication.run(HelloWorldApplication.class,args);
 	}
 
