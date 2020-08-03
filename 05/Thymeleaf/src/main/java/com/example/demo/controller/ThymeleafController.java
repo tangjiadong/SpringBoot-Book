@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 /**
  * Created by Tang on 2020/7/31
  */
@@ -21,17 +22,18 @@ public class ThymeleafController {
     public ModelAndView variable() {
         ModelAndView modelAndView = new ModelAndView("thymeleaf");
         String name = "longzhonghua";
-        Integer age=8;
+        Integer age = 8;
         modelAndView.addObject("name", name);
         modelAndView.addObject("age", age);
-
         return modelAndView;
     }
+
     @GetMapping("/")
     public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
+
     @GetMapping("/list")
     public ModelAndView list() {
         List<Object> list = new ArrayList<Object>();
@@ -42,12 +44,13 @@ public class ThymeleafController {
         modelAndView.addObject("list", list);
         return modelAndView;
     }
+
     @GetMapping("/list2")
     public ModelAndView list2() {
         List<User> list = new ArrayList<>();
-        list.add(new User(1,"long"));
-        list.add(new User(2,"zhiran"));
-        list.add(new User(3,"zhiran"));
+        list.add(new User(1, "long"));
+        list.add(new User(2, "zhiran"));
+        list.add(new User(3, "zhiran"));
         ModelAndView modelAndView = new ModelAndView("list2");
         modelAndView.addObject("list", list);
         return modelAndView;
@@ -55,7 +58,7 @@ public class ThymeleafController {
 
     @GetMapping("/map")
     public ModelAndView map() {
-        Map user= new HashMap();
+        Map user = new HashMap();
         user.put("name", "姓名");
         user.put("sex", "male");
         ModelAndView modelAndView = new ModelAndView("map");
