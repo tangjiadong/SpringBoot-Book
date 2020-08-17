@@ -18,18 +18,18 @@ public class RedisController {
     UserService userService;
 
     @RequestMapping("/{id}")
-    public User ForTest(@PathVariable String id){
+    public User ForTest(@PathVariable String id) {
         return userService.selectUser(id);
     }
 
     @RequestMapping("/update/")
-    public String update(User user){
+    public String update(User user) {
         userService.updateById(user);
         return "success";
     }
 
     @RequestMapping("/delete/{id}")
-    public String delete(@PathVariable String id){
+    public String delete(@PathVariable String id) {
         userService.deleteById(id);
         return "delete success";
     }
