@@ -43,5 +43,6 @@ public class UserService {
     public void deleteById(String id){
         System.out.println("delete");
         userMapper.deleteById(id);
+        System.out.println("delete end");
     }
 }
